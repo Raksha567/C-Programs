@@ -9,17 +9,11 @@ void main(){
 		scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
-		int num=a[i];
-		int pre_digit=-1;
-		while(num>0){
-			int current_digit=num%10;
-			num=num/10;
-			if(pre_digit==5&&current_digit==5){
-				found=1;
-				break;
-			}
-			pre_digit=current_digit;
-		}
+		if(a[i]==5&&a[i+1]==5){
+			found=1;}
+			
+		
+		
 	}
 	printf("%d\n",found);
 	if(found==1){
