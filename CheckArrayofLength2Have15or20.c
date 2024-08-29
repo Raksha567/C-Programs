@@ -9,7 +9,7 @@ void main(){
 			
 			}
 	}
-	if(appears=1){
+	if(appears==1){
 		printf("True, Sequence of 1,2,3 is present in an array");
 	}
 	else{
