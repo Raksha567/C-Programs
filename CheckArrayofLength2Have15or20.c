@@ -1,21 +1,23 @@
 #include<stdio.h>
 void main(){
-	int a[2],i;
-	printf("Enter array elements");
-	for(i=0;i<2;i++){
-		scanf("%d",&a[i]);
-		if(a[i]==15||a[i]==20){
-			printf("yes array contains 15 or 20.");
-			break;
+	int a[]={1,4,4,1,2,3,6,7,8};
+	int n=sizeof(a)/sizeof(a[0]);
+	int i,appears=0;
+	for( i=0;i<n;i++){
+		if(a[i]==1&&a[i+1]==2&&a[i+2]==3){
+			appears=1;
 			
-		}
-		if(a[i]!=15||a[i]!=20){
-			printf("No, Array does not contain 15 or 20");
-			break;
-		}
+			}
+	}
+	if(appears=1){
+		printf("True, Sequence of 1,2,3 is present in an array");
+	}
+	else{
+		printf("False,Sequence of 1,2,,3 is not present in an array ");
+	}
 		
 	}
+		
 	
 	
 	
-}
